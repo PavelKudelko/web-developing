@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculators</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <fieldset><legend><h1>Task 1.</h1></legend>
+    <h1>Calculator with text box and dropdown list</h1>
+    <form>
+        <p>
+            <input type="text" class="fields-1" id="num1">
+            <select id="operator1" name="method">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <input type="text" class="fields-1" id="num2">
+                <input type="button" value="=" id="calculate" onclick="first_calc()">
+            <strong id="result">Press to mark!</strong>
+            <p id="result"></p>
+        </p>
+    </form>
+    </fieldset> 
+    <fieldset><legend><h1>Task 2.</h1></legend>
+        <h1>Calculator with text box and option buttons</h1>
+    <form>
+        <p>
+            <input type="text" class="fields-2" id="num3"><br><br>
+            <input type="radio" id="+" name="operator2" value="+">
+            <label for="+"><strong>Addition</strong></label><br>
+            <input type="radio" id="-" name="operator2" value="-">
+            <label for="-"><strong>Substraction</strong></label><br>
+            <input type="radio" id="*" name="operator2" value="*">
+            <label for="*"><strong>Multiplication</strong></label><br>
+            <input type="radio" id="/" name="operator2" value="/">
+            <label for="/"><strong>Distidution</strong></label><br><br>
+            <input type="text" class="fields-2" id="num4">
+            <input type="button" value="=" id="calculate" onclick="second_calc()">
+            <strong id="result2">Press = mark!</strong>
+        </p>
+    </form>
+    </fieldset>
+    <fieldset><legend><h1>Task 3.</h1></legend>
+        <h1>Calculator with text box and increment/decrement buttons</h1>
+        <p><button id="up1">&uarr;</button>
+            <input type="text" class="fields-2" id="num5">
+            <button id="down1">&darr;</button>
+            <select id="operator3" name="method">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <button id="up2">&uarr;</button>
+            <input type="text" class="fields-2" id="num6">
+            <button id="down2">&darr;</button>
+            <input type="button" value="=" id="calculate" onclick="third_calc()">
+            <strong id="result3">Press = mark!</strong>
+        </p>
+
+    </fieldset>
+    <script src="index.js"></script>
+</body>
+</html>
